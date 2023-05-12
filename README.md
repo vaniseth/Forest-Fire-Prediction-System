@@ -2,13 +2,13 @@
 
 Forest Fire Prediction System gives the most accurate predictions of when fire can take place. Project made for Software Engineering Lab 2023.
 
-### Description
+## Description
 
 * Forest Fire Prediction is a Supervised Machine Learning Model. This model is trained is using Rregression and Classification algorithms.
 * Dataset used is **Algerian Forest Fires from UCI** [link](https://archive.ics.uci.edu/ml/datasets/Algerian+Forest+Fires+Dataset++#) . The datatset contains forest fire observations and data of regions of Algeria: the Bejaia region and the Sidi Bel-Abbes region.
 * The timeline of this dataset is from June 2012 to September 2012. In this project, we focused on whether certain weather features could predict forest fires in these regions using few Machine Learning algorithms.
 
-### Steps
+## Steps
 
 1. Data Collection
 2. Data Pre-Processing
@@ -21,9 +21,9 @@ Forest Fire Prediction System gives the most accurate predictions of when fire c
 9. Flask framework
 10. Model deployment
 
-### Model Development
+## Model Development
 
-**Regression**
+### **Regression**
 
 * For regression analysis **FWI(Fire weather Index)** considered as dependent feature because it highly correlated with classes variable with more than 90% correlation.
 
@@ -37,7 +37,7 @@ Forest Fire Prediction System gives the most accurate predictions of when fire c
 6. K-Nearest Neighbour regressor
 7. Support Vector Regressor
 
-**Classification**
+### **Classification**
 
 * For Classification **Classes** is dependent feature which is a **Binary Classification(fire, not fire)**
 
@@ -49,13 +49,13 @@ Forest Fire Prediction System gives the most accurate predictions of when fire c
 4. K-Nearest Neighbour
 5. XGboost
 
-### Model Selection
+## Model Selection
 
 * HyperParameter Tuning Randomized Gridsearch CV is done for top 2 models for both Regression and Classification.
 * For Classification `Stratified Kfold Cross-Validation metrics` is used based best Mean CV Accuracy Model is used for Model Deployment.
 * For Regression `R2 score metrics` is used to select best model The R2 score is one of the performance evaluation measures for regression-based machine learning models.
 
-### Flask Integration
+## Flask Integration
 
 * Importing the Flask module and creating a Flask web server from the Flask module.
 * Create an object **app** in flask class with `__name__` which represents current app.py file.
@@ -64,7 +64,7 @@ Forest Fire Prediction System gives the most accurate predictions of when fire c
 * Create a route `/predict` `/predictR` to get user input for Classification and Regression respectively.
 * Run the flask app with `app.run()` code.
 
-### Setup
+## Setup
 
 Try out the project, follow these steps:
 
